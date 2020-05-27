@@ -1,0 +1,8 @@
+#ifndef MODCORE_TRANSFER_CALLS_H
+#define MODCORE_TRANSFER_CALLS_H
+
+#define TRANSFER_TASK      0
+#define TRANSFER_MESSAGE   1
+#define TRANSFER_INTERFACE 2
+
+#endif

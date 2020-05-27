@@ -1,0 +1,7 @@
+kboot
+
+*.o
+*.d
+*.mod
+.vscode/
+libs/*.a

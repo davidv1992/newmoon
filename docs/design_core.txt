@@ -1,0 +1,25 @@
+Responsible for:
+- IDT management
+- Task switching
+- Message passing
+
+Interface: Via interrupts
+
+Send (send addr, destination, flags => void)
+Receive (recv addr, flags => void)
+Send_and_end(send addr, destination, flags => void)
+
+Create (stack pointer => index)
+Set_interface (interface id, task id => void)
+
+Data:
+- per task:
+  - stack pointer
+- per interface:
+  - task id
+
+intterrupt map:
+
+0x0-0x1F (exceptions)
+0x20-0x3F (reserved-core)
+0x40-0xFF (interrupts)

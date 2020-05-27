@@ -1,0 +1,29 @@
+General message format:
+ - 4 bytes: message type id
+ - 60 bytes: message data (type specific)
+
+Used interfaces:
+ - 0: Kernel task manager
+ - 1: Paging manager
+
+Used message IDs:
+ - 0: Task stoppped (kernel task manager)
+ - 1: Reserved (kernel task manager)
+ - 2: Reserved (kernel task manager)
+ - 3: Reserved (kernel task manager)
+
+ - 4: Map page(s) (paging)
+ - 5: Unmap page(s) (paging)
+ - 6: Get mapping (paging)
+ - 7: Paging ack (paging)
+ - 8: Paging transfer (paging)
+
+ - 9: Allocate region(s) (region manager)
+ - 10: Free region(s) (region manager)
+ - 11: Reserved (region manager)
+ - 12: Reserved (region manager)
+
+ - 13: Alloc pages (page manager)
+ - 14: Free pages (page manager)
+ - 15: Reserved (page manager)
+ - 16: Reserved (page manager)
